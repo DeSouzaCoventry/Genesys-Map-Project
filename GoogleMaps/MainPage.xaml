@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:maps="clr-namespace:Xamarin.Forms.GoogleMaps;assembly=Xamarin.Forms.GoogleMaps"
+             mc:Ignorable="d" x:Class="GoogleMaps.MainPage">
+
+    <Grid>
+    <maps:Map PinDragStart="map_PinDragStart" PinDragEnd="map_PinDragEnd" HasZoomEnabled="True" x:Name="map"/>
+        <StackLayout Orientation="Vertical" VerticalOptions="EndAndExpand">
+    <Button Text="Pickup Location" BackgroundColor="Black" TextColor="White" Padding="10" Clicked="PickupButton_Clicked" VerticalOptions="EndAndExpand"/>
+     <Button Text="Load Vehicles Near By" BackgroundColor="Black" TextColor="White" Padding="10" Clicked="Button_Clicked" VerticalOptions="EndAndExpand"/>
+    <Button Text="Update Vehicles" BackgroundColor="Black" TextColor="White" Padding="10" Clicked="Button_Clicked_1" VerticalOptions="EndAndExpand"/>
+        </StackLayout>
+    
+</Grid>
+
+</ContentPage>
